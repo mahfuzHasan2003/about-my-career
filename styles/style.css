@@ -8,3 +8,116 @@
     font-family: "Azeret Mono", monospace;
 }
 
+
+/* common style for saving time */
+/* ----------------------------------------------------------------- */
+.title {
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.sub-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.para {
+    font-size: 15px;
+    color: #0D1321;
+    font-weight: 400;
+    line-height: 25px;
+}
+.primary-color {
+    color: #0D1321;
+}
+.max-width-75 {
+    width: 75%;
+    margin: 0 auto;
+}
+.max-width-85 {
+    width: 85%;
+}
+.text-center {
+    text-align: center;
+}
+.flex-middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-break {
+    margin-bottom: 75px;
+}
+
+/* ----------------------------------------------------------------- */
+
+
+/* Main Section Starts here */
+/* Banner Section */
+
+.banner-section {
+    height: 600px;
+    background-image: url("../assets/Hero-bg.png");
+}
+.banner-section .banner-btn {
+    margin-top: 15px;
+    outline: 0;
+    border: 0;
+    background-color: #0D1321;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.banner-section .banner-btn:hover {
+    background-color: hsl(222, 43%, 15%);
+}
+
+/* Commitment Section */
+.commitment-container {
+    padding: 50px 75px;
+    border-radius: 10px;
+    background-color: rgba(13, 19, 33, 0.02);
+}
+.my-service {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(90deg, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+    padding: 25px;
+    border-radius: 10px;
+    text-align: left;
+    margin-top: 25px;
+}
+
+/* .my-service .service-container {
+    flex: 2;
+}
+.my-service .service-img {
+    flex: 1;
+} */
+
+.commitment-section .reverse-it {
+    flex-direction: row-reverse;
+}
+.commitment-section .my-service .service-title {
+    font-size: 22px;
+    color: rgba(13, 19, 33, 0.7);
+    margin-bottom: 15px;
+}
+.my-service button {
+    font-size: 15px;
+    margin-top: 15px;
+    background: transparent;
+    border: 1px solid #0D1321;
+}
+.my-service button a {
+    color: #0D1321;
+    text-decoration: none;
+    display: block;
+    padding: 8px 15px;
+    font-weight: 500;
+}
+.my-service button:hover {
+    background-color: rgba(13, 19, 33, 0.07);
+}
