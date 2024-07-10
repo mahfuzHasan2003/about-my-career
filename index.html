@@ -7,7 +7,14 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <div class="header-container max-width-85">
+        <a href="#">
+          <h1 class="sub-title"> Mahfuz H.</h1>
+        </a>
+        <a href=""><button>Download Resume</button></a>
+      </div>
+    </header>
     <main class="main">
       <section class="banner-section section-break flex-middle">
         <div class="banner-container text-center max-width-75">
@@ -21,7 +28,9 @@
             like to become a <br />
             back-end developer and stay connected with new technology.
           </p>
-          <button class="banner-btn">Contact with me</button>
+          <button class="banner-btn">
+            <a href="#contact-me">Contact with me</a>
+          </button>
         </div>
       </section>
       <section class="commitment-section section-break">
@@ -101,9 +110,58 @@
         >
         </iframe>
       </section>
-      <section class="target-section">
-        
+      <section class="target-section max-width-85 section-break">
+        <h1 class="sub-title text-center">
+          My Current Target
+        </h1>
+        <p class="para text-center">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem <br> Ipsum has been the industry's standard dummy text.
+        </p>
+        <div class="target-cards">
+          <div class="card">
+            <img src="./assets/html.png" alt="html">
+            <h3 class="card-title">HTML</h3>
+            <p class="para">Lorem Ipsum is simply dummy text of the printing.</p>
+            <a href="https://www.w3schools.com/html/html_intro.asp" class="card-hyperlink" target="_blank">Learn More</a>
+          </div>
+          <div class="card">
+            <img src="./assets/css.png" alt="CSS">
+            <h3 class="card-title">CSS</h3>
+            <p class="para">Lorem Ipsum is simply dummy text of the printing.</p>
+            <a href="https://www.w3schools.com/css/css_intro.asp" class="card-hyperlink" target="_blank">Learn More</a>
+          </div>
+          <div class="card">
+            <img src="./assets/js.png" alt="JavaScript">
+            <h3 class="card-title">JavaScript</h3>
+            <p class="para">Lorem Ipsum is simply dummy text of the printing.</p>
+            <a href="https://www.w3schools.com/whatis/whatis_js.asp" class="card-hyperlink" target="_blank">Learn More</a>
+          </div>
+        </div>
+      </section>
+      <section class="contact-section flex-middle max-width-85 section-break" id="contact-me">
+        <div class="contact-container text-center">
+          <h1 class="sub-title color-white">
+            I need Support
+          </h1>
+          <p class="para color-white">
+            Lorem Ipsum is simply dummy text of the printing and <br> typesetting industry.
+          </p>
+          <form action="">
+            <input type="text" name="Feedback" placeholder="Suggest me any feedback for me">
+            <input type="button" value="Submit">
+          </form>
+        </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="footer-container max-width-85">
+        <p class="footer-text">An Open Commitment by Mahfuz Hasan</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/callMeMahfuz" target="_blank"><img src="./assets/facebook.png" alt="Facebook"></a>
+          <a href="https://github.com/mahfuzHasan2003" target="_blank"><img src="./assets/github.png" alt="Github"></a>
+          <a href="https://www.linkedin.com/in/mahfuzhasan2003/" target="_blank"><img src="./assets/linkedin-icon 1.png" alt="LinkedIn"></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

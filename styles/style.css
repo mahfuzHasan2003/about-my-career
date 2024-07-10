@@ -7,6 +7,10 @@
     box-sizing: border-box;
     font-family: "Azeret Mono", monospace;
 }
+html {
+    scroll-behavior: smooth;
+}
+
 
 
 /* common style for saving time */
@@ -29,6 +33,9 @@
 }
 .primary-color {
     color: #0D1321;
+}
+.color-white {
+    color: #fff;
 }
 .max-width-75 {
     width: 75%;
@@ -53,6 +60,29 @@
 /* ----------------------------------------------------------------- */
 
 
+
+/* Header Part */
+.header {
+    background-color: #fff;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.header-container a {
+    text-decoration: none;
+    color: #0D1321;
+}
+.header-container a button {
+    outline: 0;
+    border: 0;
+    padding: 15px 20px;
+    background-color: transparent;
+    border: 1px solid #0D1321;
+    border-radius: 5px;
+    cursor: pointer;
+}
 /* Main Section Starts here */
 /* Banner Section */
 
@@ -65,20 +95,25 @@
     outline: 0;
     border: 0;
     background-color: #0D1321;
-    color: #fff;
-    padding: 15px 30px;
     border-radius: 5px;
     cursor: pointer;
 }
 .banner-section .banner-btn:hover {
     background-color: hsl(222, 43%, 15%);
 }
+.banner-btn a {
+    padding: 15px 30px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    
+}
 
 /* Commitment Section */
 .commitment-container {
     padding: 50px 0;
     border-radius: 10px;
-    background-color: rgba(13, 19, 33, 0.02);
+    background-color: rgba(13, 19, 33, 0.035);
 }
 .my-service {
     display: flex;
@@ -135,3 +170,87 @@
 }
 
 /* Current Target Section */
+.target-section .target-cards {
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+    justify-content: space-around;
+}
+.target-cards .card {
+    border-radius: 5px;
+    padding: 35px;
+}
+.target-cards .card:first-child {
+    background-color: rgba(255, 76, 30, 0.05);
+}
+.target-cards .card:nth-child(2) {
+    background-color: rgba(0, 76, 232, 0.05);
+}
+.target-cards .card:last-child {
+    background-color: rgba(255, 223, 0, 0.05);
+}
+.card img {
+    margin-bottom: 10px;
+}
+.card h3 {
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.card .card-hyperlink {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0D1321;
+    font-weight: 700;
+}
+
+/* Contact Section */
+.contact-section {
+    height: 350px;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,1) 100%), url("../assets/handshake.jpg");
+    background-position: center;
+    border-radius: 10px;
+}
+.contact-section .contact-container {
+    /* background-color: #fff; */
+}
+.contact-section form {
+    margin-top: 15px;
+}
+.contact-section form input {
+    padding: 15px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.contact-section form input[type="text"] {
+    min-width: 500px;
+}
+.contact-section form input[type="button"] {
+    cursor: pointer;
+    font-weight: 700;
+}
+.contact-section form input[type="button"]:hover {
+    background-color: #d9d9d9;
+}
+
+/* Footer Part */
+.footer {
+    background-color: rgba(13, 19, 33, 0.04);
+}
+.footer .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.footer-container .footer-text {
+    font-size: 18px;
+    font-weight: 600;
+}
+.footer-container .social-icons a {
+    display: inline-block;
+}
+.footer-container .social-icons a:not(:last-child) img {
+    margin-right: 10px;
+}
